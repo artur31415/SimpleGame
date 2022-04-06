@@ -6,8 +6,10 @@ import Chess
 main :: IO ()
 main = do
     putStrLn "Hello, Haskell!"
-    debug_piece <- White Bishop
-    putStrLn show debug_piece
+    let debug_piece = Piece White Tower
+    let debug_p = Piece Black Pawn
+    putStrLn $ show debug_piece
+    putStrLn $ show debug_p
     putStr "input> "
     hFlush stdout
     u_input <- getLine

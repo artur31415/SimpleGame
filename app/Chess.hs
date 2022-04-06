@@ -12,9 +12,15 @@ instance Show PieceType where
 
 data Color = Black | White
 
-data Piece = Color PieceType
+data Piece = Piece Color PieceType
 
 instance Show Piece where
     show (Piece White pt) = map Data.Char.toUpper $ show pt
     show (Piece Black pt) = show pt
+
+data GameBoard = ChessBoard
+    {
+            asVector:: Data.Vector.Vector (Maybe Piece)
+        ,   nexPlayer:: Color
+    }
 
