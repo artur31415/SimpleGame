@@ -10,6 +10,7 @@ main = do
     let debug_p = Piece Black Pawn
     putStrLn $ show debug_piece
     putStrLn $ show debug_p
+    putStrLn $ show initialPosition
     putStr "input> "
     hFlush stdout
     u_input <- getLine

@@ -20,6 +20,16 @@
   (major1) == 4 && (major2) <  14 || \
   (major1) == 4 && (major2) == 14 && (minor) <= 3)
 #endif /* MIN_VERSION_base */
+/* package vector-0.12.3.1 */
+#ifndef VERSION_vector
+#define VERSION_vector "0.12.3.1"
+#endif /* VERSION_vector */
+#ifndef MIN_VERSION_vector
+#define MIN_VERSION_vector(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  12 || \
+  (major1) == 0 && (major2) == 12 && (minor) <= 3)
+#endif /* MIN_VERSION_vector */
 
 /* tool gcc-9.2.0 */
 #ifndef TOOL_VERSION_gcc
